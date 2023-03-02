@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>Pizza Order</title>
+    <meta name="description" content="Assignment 2: Let's Order a Pizza!">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Fonts (names) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500;700&family=Josefin+Sans:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Icons; I looked up how to do icons on w3s to make it all look more fancy-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!-- Logo container -->
+        <div>
+            <a href="index.html"><img src="./img/logo.jpg" alt="Company logo"></a>
+        </div>
+        <div>
+            <h1><a href="index.html">Real Pizza Company</a></h1>
+        </div>
+        <nav>
+            <menu>
+
+                <li><a href="#pizzas">Pizzas</a></li>
+                <li><a href="#sides">Sides</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <!-- Box for weekly promo deals -->
+        <section class="main product-promo">
+            <div>
+                <p>Enjoy 10% off pizzas every Tuesday!</p>
+            </div>
+        </section>
+        <!-- Pizza menu -->
+        <div class="main product-items">
+            <h2 id="pizzas">Pizzas</h2>
+        </div>
+        <section class="main menu">
+            <div>
+                <img src="./img/img2.jpg" alt="Image of a cheese pizza">
+                <h2>Cheese</h2>
+                <p class = "price">$12.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: home-style sauce, and mozzarella</p>
+            </div>
+            <div>
+                <img src="./img/pepperoni.jpg" alt="Image of a pepperoni pizza">
+                <h2>Pepperoni</h2>
+                <p class = "price">$13.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: pepperoni, home-style sauce, and mozzarella</p>
+            </div>
+            <div>
+                <img src="./img/img4.jpg" alt="Image of a margarita pizza">
+                <h2>Margarita</h2>
+                <p class = "price">$14.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: extra virgin olive oil, mozzarella, hand-torn basil, and Parmesan</p>
+            </div>
+            <div>
+                <img src="./img/meatlovers.jpg" alt="Image of a meat lover's pizza">
+                <h2>Meat Lover's</h2>
+                <p class = "price">$15.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: pepperoni, bacon, salami, sausage, mozzarella, and Italiano blend seasoning</p>
+            </div>
+            <div>
+                <img src="./img/gardenveggie.jpg" alt="Image of a garden veggie pizza">
+                <h2>Garden Veggie</h2>
+                <p class = "price">$13.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: green peppers, fresh mushrooms, roma tomatoes, and mozzarella on a whole grain crust</p>
+            </div>
+            <div>
+                <img src="./img/deluxe.jpg" alt="Image of a deluxe pizza">
+                <h2>Deluxe</h2>
+                <p class = "price">$15.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: white onions, mushrooms, green peppers, bacon, pepperoni, and mozzarella</p>
+            </div>
+            <div>
+                <img src="./img/hawaiian.jpg" alt="Image of a hawaiian pizza">
+                <h2>Hawaiian</h2>
+                <p class = "price">$13.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: pineapple, ham, and mozzarella</p>
+            </div>
+            <div>
+                <img src="./img/img5.jpg" alt="Image of a chicken caesar pizza">
+                <h2>Chicken Caesar</h2>
+                <p class = "price">$13.99</p>
+                <p>(And up)</p>
+                <p>Ingredients: creamy tomato & garlic sauce, mozzarella, cheddar, grilled chicken strips, bacon, and parmesan</p>
+            </div>
+        </section>
+        <!-- Pseudo-ordering form -->
+        <section class="form">
+            <div class="container">
+                <!-- Container for pizza image -->
+                <div>
+                    <img src="./img/img6.png" alt="Image of a pizza">
+                </div>
+                <!-- Drop down menus for pizza specifications -->
+                <section>
+                    <div><p>Select your pizza:</p></div>
+                    <div>
+                        <select>
+                            <option>Cheese</option>
+                            <option>Pepperoni</option>
+                            <option>Margarita</option>
+                            <option>Meat Lovers</option>
+                            <option>Garden Veggie</option>
+                            <option>Deluxe</option>
+                            <option>Hawaiian</option>
+                            <option>Chicken Caesar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select>
+                            <option>Small</option>
+                            <option>Medium (+$2.00)</option>
+                            <option>Large (+$4.00)</option>
+                            <option>X-Large (+$6.00)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </section>
+                <!-- Checkboxes for extra toppings -->
+                <section>
+                    <div><p>Select your extra toppings:</p></div>
+                    <div>
+                        <p>Sauces</p>
+                        <label class="selection"> Home-Style Sauce
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Garlic Butter Sauce
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> BBQ Sauce
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Sweet & Spicy Sauce
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <p>Cheeses</p>
+                        <label class="selection"> Mozzarella
+                            <input type="checkbox" checked> <!-- Add "checked" for all default ingredients-->
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Cheddar
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Dairy Free Vegan
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Parmesan
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <p>Meats</p>
+                        <label class="selection"> Bacon
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Chicken
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Sausage
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection"> Ham
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <p>Veggies</p>
+                        <label class="selection">Mushrooms
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection">Green Peppers
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection">Green Olives
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="selection">Diced Tomatoes
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </section>
+                <!-- Add to cart (in theory, if we had any backend) -->
+                <div class="add-cart">
+                    <button>Add to Cart <i class="fa fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- Sides menu -->
+        <div class="product-items">
+            <h2 id="sides">Sides</h2>
+        </div>
+        <section class="main side-menu">
+            <div>
+                <img src="./img/side1.jpg" alt="Image of cheesy bread sticks">
+                <h2>Cheesy Bread Sticks</h2>
+                <p class = "price">$9.99</p>
+                <p>Ingredients: home-style crust, garlic butter, mozzarella, cheddar, and parmesan</p>
+            </div>
+            <div>
+                <img src="./img/side2.jpg" alt="Image of bread sticks">
+                <h2>Bread Sticks</h2>
+                <p class = "price">$7.99</p>
+                <p>Ingredients: home-style dough, garlic butter, parmesan</p>
+            </div>
+            <div>
+                <img src="./img/side3.jpg" alt="Image of chicken wings">
+                <h2>Chicken Wings</h2>
+                <p class = "price">$11.99</p>
+                <p>Ingredients: buffalo seasoning, BBQ seasoning</p>
+            </div>
+            <div>
+                <img src="./img/side4.jpg" alt="Image of french fries">
+                <h2>French Fries</h2>
+                <p class = "price">$5.99</p>
+                <p>Ingredients: potato, salt</p>
+            </div>
+        </section>
+        <!-- Pseudo-ordering form for sides-->
+        <section class="form-sides">
+            <div class="container-sides">
+                <!-- Container for side meal image -->
+                <div class ="image-sides">
+                    <img src="./img/sides.jpg" alt="Image of an array of food: pizza, chicken wings, and onion rings">
+                </div>
+                <!-- Drop down menus for side ordering -->
+                <section>
+                    <div><p>Select your side:</p></div>
+                    <div>
+                        <select>
+                            <option>Cheesy Bread Sticks</option>
+                            <option>Bread Sticks</option>
+                            <option>Chicken Wings</option>
+                            <option>Fries</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </section>
+                <!-- Add to cart (in theory) -->
+                <div class="add-cart-sides">
+                    <button>Add to Cart <i class="fa fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <section>
+            <!-- Pseudo-cart for checking out -->
+            <!-- Just pretend that it actually works since we aren't using JS :( -->
+            <div><h4 id="cart">Cart</h4></div>
+            <div>
+              <i class="fa fa-shopping-cart"></i>
+              <b>4</b>
+            </div>
+            <div>
+                <p>Pepperoni (1, Small)</p>
+                <p>Deluxe (2, Large) </p>
+                <p>Bread Sticks (1)</p>
+                <p>Chicken Wings (1)</p>
+            </div>
+            <div>
+                <p>$13.99</p>
+                <p>$39.98</p>
+                <p>$7.99</p>
+                <p>$11.99</p>
+            </div>
+            <div><p>Total:</p></div>
+            <div><p class="price"><b>$73.95</b></p></div>
+        </section>
+    </aside>
+    <footer>
+        <section>
+            <div>
+                <p>Disclaimer: this is a student project and unfortunately this is not a real restaurant.</p>
+                <p>© Real Pizza Company, Inc. ; Used under license. All rights reserved, if it were real.</p>
+                <p>This site is protected by the Google Privacy Policy and Terms of Service apply, if it were real. </p>
+                <p> Designed by Emily Rose, who is real
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </p>
+            </div>
+            <div>
+                <form method="post" action="some-php-file">
+                    <p>Contact Us</p>
+                    <p><input type="text" placeholder="* Your Name" name="fullname" required></p>
+                    <p><input type="email" placeholder="* Your Email" name="email" required></p>
+                    <p><input type="email" placeholder="* Your Message" name="message" required></p>
+                    <p><input type="submit" value="Send"></p>
+                </form>
+            </div>
+            <!-- Company Logo -->
+            <div>
+                <a href="index.html"><img src="./img/logo.jpg" alt="company logo"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
