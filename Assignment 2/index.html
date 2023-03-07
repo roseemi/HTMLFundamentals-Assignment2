@@ -296,26 +296,29 @@
     <aside>
         <section>
             <!-- Pseudo-cart for checking out -->
-            <!-- Just pretend that it actually works since we aren't using JS :( -->
-            <div><h4 id="cart">Cart</h4></div>
-            <div>
-              <i class="fa fa-shopping-cart"></i>
-              <b>4</b>
-            </div>
-            <div>
-                <p>Pepperoni (1, Small)</p>
-                <p>Deluxe (2, Large) </p>
-                <p>Bread Sticks (1)</p>
-                <p>Chicken Wings (1)</p>
-            </div>
-            <div>
-                <p>$13.99</p>
-                <p>$39.98</p>
-                <p>$7.99</p>
-                <p>$11.99</p>
-            </div>
-            <div><p>Total:</p></div>
-            <div><p class="price"><b>$73.95</b></p></div>
+            <!-- Just pretend that it actually works since we aren't using JS/PHP :( -->
+            <form action="some-php-file" method="post">
+                <div><h4 id="cart">Cart</h4></div>
+                <div>
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>4</b>
+                </div>
+                <div>
+                    <p>Pepperoni (1, Small)</p>
+                    <p>Deluxe (2, Large) </p>
+                    <p>Bread Sticks (1)</p>
+                    <p>Chicken Wings (1)</p>
+                </div>
+                <div>
+                    <p>$13.99</p>
+                    <p>$39.98</p>
+                    <p>$7.99</p>
+                    <p>$11.99</p>
+                </div>
+                <div><p>Total:</p></div>
+                <div><p class="price"><b>$73.95</b></p></div>
+                <div><input type="submit" value="Submit"></div>
+            </form>
         </section>
     </aside>
     <footer>
@@ -331,11 +334,11 @@
                 </p>
             </div>
             <div>
-                <form method="post" action="some-php-file">
+                <form action="some-php-file" method="post">
                     <p>Contact Us</p>
                     <p><input type="text" placeholder="* Your Name" name="fullname" required></p>
                     <p><input type="email" placeholder="* Your Email" name="email" required></p>
-                    <p><input type="email" placeholder="* Your Message" name="message" required></p>
+                    <p><input type="text" placeholder="* Your Message" name="message" required maxlength="250"></p>
                     <p><input type="submit" value="Send"></p>
                 </form>
             </div>
